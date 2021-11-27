@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'Courier New';
+	font-size: 10pt;
+	color: #000000;
+}
+.sc0 {
+	font-weight: bold;
+}
+.sc1 {
+	color: #0000FF;
+}
+.sc3 {
+	color: #FF0000;
+}
+.sc4 {
+}
+.sc6 {
+	font-weight: bold;
+	color: #8000FF;
+}
+.sc7 {
+	font-weight: bold;
+	color: #8000FF;
+}
+.sc8 {
+}
+.sc11 {
+	color: #0000FF;
+}
+.sc18 {
+	color: #FF0000;
+	background: #FDF8E3;
+}
+.sc21 {
+	background: #A6CAF0;
+}
+.sc22 {
+}
+.sc118 {
+	background: #FEFCF5;
+}
+.sc119 {
+	color: #808080;
+	background: #FEFCF5;
+}
+.sc120 {
+	color: #808080;
+	background: #FEFCF5;
+}
+.sc121 {
+	font-weight: bold;
+	color: #0000FF;
+	background: #FEFCF5;
+}
+.sc123 {
+	color: #000080;
+	background: #FEFCF5;
+}
+.sc127 {
+	color: #8000FF;
+	background: #FEFCF5;
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #FFFFFF; "><span class="sc18">&lt;?php</span><span class="sc118">
+
+</span><span class="sc121">session_start</span><span class="sc127">();</span><span class="sc118">
+
+
+</span><span class="sc121">require_once</span><span class="sc127">(</span><span class="sc120">'php/CreateDb.php'</span><span class="sc127">);</span><span class="sc118">
+</span><span class="sc121">require_once</span><span class="sc127">(</span><span class="sc120">'php/component.php'</span><span class="sc127">);</span><span class="sc118">
+
+
+</span><span class="sc123">$db</span><span class="sc118"> </span><span class="sc127">=</span><span class="sc118"> </span><span class="sc121">new</span><span class="sc118"> CreateDb</span><span class="sc127">(</span><span class="sc119">"Productdb"</span><span class="sc127">,</span><span class="sc119">"Producttb"</span><span class="sc127">);</span><span class="sc118">
+
+
+</span><span class="sc18">?&gt;</span><span class="sc0">
+
+</span><span class="sc21">&lt;!</span><span class="sc22">DOCTYPEhtml</span><span class="sc21">&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;html</span><span class="sc8"> </span><span class="sc3">lang</span><span class="sc8">=</span><span class="sc7">'en'</span><span class="sc1">&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;head&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;meta</span><span class="sc8"> </span><span class="sc3">charset</span><span class="sc8">=</span><span class="sc6">"UTF-8"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;meta</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"viewpoint"</span><span class="sc8"> </span><span class="sc3">content</span><span class="sc8">=</span><span class="sc6">"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;meta</span><span class="sc8"> </span><span class="sc3">http-equiv</span><span class="sc8">=</span><span class="sc6">"X-UA-Compatible"</span><span class="sc8"> </span><span class="sc3">content</span><span class="sc8">=</span><span class="sc6">"ie=edge"</span><span class="sc11">/&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;title&gt;</span><span class="sc0">My Cart</span><span class="sc1">&lt;/title&gt;</span><span class="sc0">
+    
+
+    </span><span class="sc1">&lt;link</span><span class="sc8"> </span><span class="sc3">href</span><span class="sc8">=</span><span class="sc6">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"</span><span class="sc8"> </span><span class="sc3">rel</span><span class="sc8">=</span><span class="sc6">"stylesheet"</span><span class="sc1">&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;link</span><span class="sc8"> </span><span class="sc3">href</span><span class="sc8">=</span><span class="sc6">"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"</span><span class="sc8"> </span><span class="sc3">rel</span><span class="sc8">=</span><span class="sc6">"stylesheet"</span><span class="sc8"> </span><span class="sc4">integrity</span><span class="sc8">=</span><span class="sc6">"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"</span><span class="sc8"> </span><span class="sc4">crossorigin</span><span class="sc8">=</span><span class="sc6">"anonymous"</span><span class="sc1">&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;link</span><span class="sc8"> </span><span class="sc3">rel</span><span class="sc8">=</span><span class="sc6">"stylesheet"</span><span class="sc8"> </span><span class="sc3">href</span><span class="sc8">=</span><span class="sc6">"style.css"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;/head&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;body</span><span class="sc8"> </span><span class="sc3">class</span><span class="sc8">=</span><span class="sc6">"bg-light"</span><span class="sc1">&gt;</span><span class="sc0">
+
+    </span><span class="sc18">&lt;?php</span><span class="sc118">
+        </span><span class="sc121">require_once</span><span class="sc127">(</span><span class="sc120">'php/header.php'</span><span class="sc127">);</span><span class="sc118">
+    </span><span class="sc18">?&gt;</span><span class="sc0">
+    
+    </span><span class="sc1">&lt;div</span><span class="sc8"> </span><span class="sc3">class</span><span class="sc8">=</span><span class="sc6">"container-fluid"</span><span class="sc1">&gt;</span><span class="sc0"> 
+        </span><span class="sc1">&lt;div</span><span class="sc8"> </span><span class="sc3">class</span><span class="sc8">=</span><span class="sc6">"row px-5"</span><span class="sc1">&gt;</span><span class="sc0"> 
+            </span><span class="sc1">&lt;div</span><span class="sc8"> </span><span class="sc3">class</span><span class="sc8">=</span><span class="sc6">"col-md-7"</span><span class="sc1">&gt;</span><span class="sc0"> 
+                </span><span class="sc1">&lt;div</span><span class="sc8"> </span><span class="sc3">class</span><span class="sc8">=</span><span class="sc6">"shopping-cart"</span><span class="sc1">&gt;</span><span class="sc0">
+                    </span><span class="sc1">&lt;h6&gt;</span><span class="sc0">My Cart </span><span class="sc1">&lt;/h6&gt;</span><span class="sc0">
+                    </span><span class="sc1">&lt;hr&gt;</span><span class="sc0">
+                    
+                    </span><span class="sc18">&lt;?php</span><span class="sc118">
+                        </span><span class="sc123">$product_id</span><span class="sc118"> </span><span class="sc127">=</span><span class="sc118"> </span><span class="sc121">array_column</span><span class="sc127">(</span><span class="sc123">$_SESSION</span><span class="sc127">[</span><span class="sc120">'cart'</span><span class="sc127">],</span><span class="sc120">'product_id'</span><span class="sc127">);</span><span class="sc118">
+                        </span><span class="sc123">$result</span><span class="sc118"> </span><span class="sc127">=</span><span class="sc118"> </span><span class="sc123">$db</span><span class="sc127">-&gt;</span><span class="sc118">getData</span><span class="sc127">();</span><span class="sc118">
+                        
+                        </span><span class="sc121">while</span><span class="sc118"> </span><span class="sc127">(</span><span class="sc123">$row</span><span class="sc118"> </span><span class="sc127">=</span><span class="sc118"> </span><span class="sc121">mysqli_fetch_assoc</span><span class="sc127">(</span><span class="sc123">$result</span><span class="sc127">)){</span><span class="sc118">
+                            </span><span class="sc121">foreach</span><span class="sc118"> </span><span class="sc127">(</span><span class="sc123">$product_id</span><span class="sc118"> </span><span class="sc121">as</span><span class="sc118"> </span><span class="sc123">$id</span><span class="sc127">){</span><span class="sc118">
+                                </span><span class="sc121">if</span><span class="sc118"> </span><span class="sc127">(</span><span class="sc123">$row</span><span class="sc127">[</span><span class="sc120">'id'</span><span class="sc127">]</span><span class="sc118"> </span><span class="sc127">==</span><span class="sc118"> </span><span class="sc123">$id</span><span class="sc127">){</span><span class="sc118">
+                                    cartElement</span><span class="sc127">(</span><span class="sc123">$row</span><span class="sc127">[</span><span class="sc120">'product_image'</span><span class="sc127">],</span><span class="sc123">$row</span><span class="sc127">[</span><span class="sc120">'product_name'</span><span class="sc127">],</span><span class="sc123">$row</span><span class="sc127">[</span><span class="sc120">'product_price'</span><span class="sc127">]);</span><span class="sc118">
+                                </span><span class="sc127">}</span><span class="sc118">
+                            </span><span class="sc127">}</span><span class="sc118">
+                        </span><span class="sc127">}</span><span class="sc118">
+                    
+                    </span><span class="sc18">?&gt;</span><span class="sc0">
+                    
+                </span><span class="sc1">&lt;/div&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;/div&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;div</span><span class="sc8"> </span><span class="sc3">class</span><span class="sc8">=</span><span class="sc6">"col-md-5"</span><span class="sc1">&gt;</span><span class="sc0"> </span><span class="sc1">&lt;/div&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;/div&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/div&gt;</span><span class="sc0">
+
+    </span><span class="sc1">&lt;script</span><span class="sc8"> </span><span class="sc3">src</span><span class="sc8">=</span><span class="sc6">"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"</span><span class="sc8"> </span><span class="sc4">integrity</span><span class="sc8">=</span><span class="sc6">"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"</span><span class="sc8"> </span><span class="sc4">crossorigin</span><span class="sc8">=</span><span class="sc6">"anonymous"</span><span class="sc1">&gt;&lt;/script&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;script</span><span class="sc8"> </span><span class="sc3">src</span><span class="sc8">=</span><span class="sc6">"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"</span><span class="sc8"> </span><span class="sc4">integrity</span><span class="sc8">=</span><span class="sc6">"sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"</span><span class="sc8"> </span><span class="sc4">crossorigin</span><span class="sc8">=</span><span class="sc6">"anonymous"</span><span class="sc1">&gt;&lt;/script&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;script</span><span class="sc8"> </span><span class="sc3">src</span><span class="sc8">=</span><span class="sc6">"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"</span><span class="sc8"> </span><span class="sc4">integrity</span><span class="sc8">=</span><span class="sc6">"sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"</span><span class="sc8"> </span><span class="sc4">crossorigin</span><span class="sc8">=</span><span class="sc6">"anonymous"</span><span class="sc1">&gt;&lt;/script&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;/body&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;/html&gt;</span></div></body>
+</html>
